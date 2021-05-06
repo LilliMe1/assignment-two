@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment-two';
+ username="";
+ btnDisableFlag=false;
+
+ btnKeyUpMethod(){
+
+  if(this.username.length!=null){
+    this.btnDisableFlag=true;
+  }
+  if(this.username.length==null){
+    this.btnDisableFlag=false;
+  }
+ }
+
+ btnDiasbleMethod(){
+  this.username=null;
+ }
 }
