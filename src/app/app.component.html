@@ -2,4 +2,4 @@
 <input type="text" [(ngModel)]="username" id="username" class="form-control" (keypress)="btnKeyUpMethod()">
 <p>{{username}}</p>
 
-<button class="primary-btn btn" [disabled]="!btnDisableFlag" (click)="btnDiasbleMethod()">Reset username</button>
+<button class="primary-btn btn" [disabled]="username === ''" (click)="btnDiasbleMethod()">Reset username</button>
